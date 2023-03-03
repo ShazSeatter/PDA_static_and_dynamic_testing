@@ -15,12 +15,13 @@ Only comment on errors that would stop the tests running.
 ```python
 
 class CardGame:
-# class properties haven't been defined with any set up
+# no properties have been defined - not a class
 
   def check_for_ace(self, card):
-    # missing self.card.value
+    # needs to be == to check for equality
     if card.value = 1:
       return True
+    # missing : after else to indicate new block of code
     else
       return False
    
@@ -39,9 +40,9 @@ class CardGame:
 def cards_total(self, cards):
   # starting value/total hasn't been defined 
   total
-  # self missing again 
   for card in cards:
     total += card.value
+  # return on this level will exit the loop and not continue adding all the values
     return "You have a total of" + total
   
 ```
