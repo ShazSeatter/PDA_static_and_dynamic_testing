@@ -43,6 +43,7 @@ def cards_total(self, cards):
   for card in cards:
     total += card.value
   # return on this level will exit the loop and not continue adding all the values
+  # total needs to be converted into a string for the concatentation to work 
     return "You have a total of" + total
-  
+
 ```
